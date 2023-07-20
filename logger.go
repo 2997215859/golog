@@ -59,6 +59,22 @@ func createLogFile() *os.File {
 
 const SkipKey = "@skip"
 
+func InitDailyLogger() {
+	InitLogger("./logs/app.access_log.%Y_%m_%d",
+		rotatelogs.WithLinkName("./logs/app.access_log"),
+		rotatelogs.WithMaxAge(7*24*time.Hour),
+		rotatelogs.WithRotationTime(time.Hour*24),
+	)
+}
+
+func InitHourLogger() {
+	InitLogger("./logs/app.access_log.%Y_%m_%d_%H_%M_%S",
+		rotatelogs.WithLinkName("./logs/app.access_log"),
+		rotatelogs.WithMaxAge(7*24*time.Hour),
+		rotatelogs.WithRotationTime(time.Hour),
+	)
+}
+
 func InitLogger(pattern string, options ...rotatelogs.Option) {
 	Logger = logrus.New()
 
