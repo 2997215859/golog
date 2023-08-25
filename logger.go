@@ -3,14 +3,15 @@ package logger
 import (
 	"bytes"
 	"fmt"
-	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
-	"github.com/sirupsen/logrus"
-	"gitlab-dev.qxinvest.com/goenv/env"
 	"io"
 	"os"
 	"path"
 	"path/filepath"
 	"time"
+
+	env "github.com/2997215859/goenv"
+	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
+	"github.com/sirupsen/logrus"
 )
 
 var Logger *logrus.Logger

@@ -1,3 +1,5 @@
+github.com/2997215859/goenv v0.0.0-20230822030106-779e8ae2187a h1:wELormgOwwY/vTDc4WkOJVwPrk5c8WGvq9f3BX7huEo=
+github.com/2997215859/goenv v0.0.0-20230822030106-779e8ae2187a/go.mod h1:FRikS07gSsunm+MyyzTBkFIOhlx1gaoxz5rkYVvF/ao=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -19,8 +21,6 @@ github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
-gitlab-dev.qxinvest.com/goenv/env v0.0.0-20230508015158-4e3b3225bce8 h1:v0huk3NsL1nOCGoN0fLPfSBoItdqAM7FuuqKNdmGPZg=
-gitlab-dev.qxinvest.com/goenv/env v0.0.0-20230508015158-4e3b3225bce8/go.mod h1:CC3th7MTFTzAn3xKdNfkZjHV3ZvYkn82lLOI1JcuGlg=
 golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 h1:0A+M6Uqn+Eje4kHMK80dtF3JCXC4ykBgQG4Fe06QRhQ=
 golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
