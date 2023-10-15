@@ -14,6 +14,10 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
+func init() {
+	InitDailyLogger()
+}
+
 var Logger *logrus.Logger
 
 type formatter struct{}
