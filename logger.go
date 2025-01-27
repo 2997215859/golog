@@ -80,8 +80,8 @@ func InitHourLogger() {
 	)
 }
 
-func IsForceStdout() bool {
-	if os.Getenv("LOG_STDOUT") == "true" {
+func IsStdout() bool {
+	if os.Getenv("log_stdout") == "true" {
 		return true
 	}
 	return false
@@ -96,7 +96,7 @@ func InitLogger(pattern string, options ...rotatelogs.Option) {
 	}
 
 	writers := []io.Writer{rotateWriter}
-	if env.ENV() == env.ENV_DEV || IsForceStdout() {
+	if env.ENV() == env.ENV_DEV || IsStdout() {
 		writers = append(writers, os.Stdout)
 	}
 	mw := io.MultiWriter(writers...)
