@@ -33,7 +33,7 @@ func (m *formatter) Format(entry *logrus.Entry) ([]byte, error) {
 
 	//newLog := fmt.Sprintf("%s [%s] %s:%d %s. %s\n", timestamp, entry.Level, path.Base(entry.Caller.File), entry.Caller.Line, entry.Caller.Function, entry.Message)
 	//newLog := fmt.Sprintf("%s [%s] %s:%d %s. %s\n", timestamp, entry.Level, path.Base(entry.Data["file"].(string)), entry.Data["line"], entry.Data["function"], entry.Message)
-	newLog := fmt.Sprintf("%s [%s] %s:%d %s. %s\n", timestamp, entry.Level, entry.Data["file"].(string), entry.Data["line"], path.Base(entry.Data["function"].(string)), entry.Message)
+	newLog := fmt.Sprintf("%s [%s] %s:%d %s. %s\n", timestamp, entry.Level, path.Base(entry.Data["file"].(string)), entry.Data["line"], path.Base(entry.Data["function"].(string)), entry.Message)
 
 	b.WriteString(newLog)
 	return b.Bytes(), nil
