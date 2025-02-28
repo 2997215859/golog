@@ -29,7 +29,7 @@ func (m *formatter) Format(entry *logrus.Entry) ([]byte, error) {
 		b = &bytes.Buffer{}
 	}
 
-	timestamp := entry.Time.Format("2006-01-02 15:04:05")
+	timestamp := entry.Time.Format("2006-01-02 15:04:05.000")
 
 	//newLog := fmt.Sprintf("%s [%s] %s:%d %s. %s\n", timestamp, entry.Level, path.Base(entry.Caller.File), entry.Caller.Line, entry.Caller.Function, entry.Message)
 	//newLog := fmt.Sprintf("%s [%s] %s:%d %s. %s\n", timestamp, entry.Level, path.Base(entry.Data["file"].(string)), entry.Data["line"], entry.Data["function"], entry.Message)
