@@ -15,7 +15,7 @@ import (
 )
 
 func init() {
-	InitDailyLogger()
+	InitDailyLogger(3)
 }
 
 var Logger *logrus.Logger
@@ -64,10 +64,14 @@ func createLogFile() *os.File {
 
 const SkipKey = "@skip"
 
-func InitDailyLogger() {
+func InitDailyLogger(saveDays int) {
+	if saveDays <= 0 {
+		saveDays = 3
+	}
+
 	InitLogger("./logs/app.access_log.%Y_%m_%d",
 		rotatelogs.WithLinkName("./logs/app.access_log"),
-		rotatelogs.WithMaxAge(7*24*time.Hour),
+		rotatelogs.WithMaxAge(time.Duration(saveDays)*24*time.Hour),
 		rotatelogs.WithRotationTime(time.Hour*24),
 	)
 }
